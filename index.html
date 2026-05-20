@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaifer Tech — Digital Precision</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">Kaifer<span>.</span>Tech</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#services" onclick="closeMobile()">Services</a>
+    <a href="#work"     onclick="closeMobile()">Work</a>
+    <a href="#contact"  onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-orb"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Digital Precision Studio</div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">We Build</span></span>
+        <span class="line"><span class="word accent">Tomorrow's</span></span>
+        <span class="line"><span class="word">Digital.</span></span>
+      </h1>
+      <p class="hero-tagline">
+        In a digital era we understand the need for more digital solutions, and thats what we are here for. To help you solve your digital problems.
+      </p>
+      <a href="#work" class="hero-cta">
+        View Our Work
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left reveal">
+          <div class="section-label">About Us</div>
+          <h2 class="section-title">Precision meets<br><span class="accent">creativity.</span></h2>
+          <div class="about-divider"></div>
+          <p class="about-text">
+            Kaifer Tech is a cutting-edge technology studio dedicated to building digital products and solutions that move industries forward. We combine rigorous engineering discipline with sharp design thinking to deliver software that doesn't just work — it leads.
+          </p>
+          <p class="about-sub" style="margin-top:1rem;">
+            From startups disrupting markets to enterprises modernizing at scale — we're the technical partner that ships.
+          </p>
+        </div>
+        <div class="stats-grid reveal" style="transition-delay:0.15s">
+          <div class="stat-card">
+            <div class="stat-number" data-target="15">0+</div>
+            <div class="stat-label">Projects Shipped</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">Years Operating</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Active Clients</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="98">0</div>
+            <div class="stat-label">% Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">Our Services</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal" style="transition-delay:0.05s">
+          <span class="service-icon">⬡</span>
+          <div class="service-name">Web Development</div>
+          <p class="service-desc">Performant, scalable web applications built with modern frameworks and battle-tested architecture.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.12s">
+          <span class="service-icon">◈</span>
+          <div class="service-name">Mobile Apps</div>
+          <p class="service-desc">Native and cross-platform mobile experiences engineered for speed, reliability, and intuitive use.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.19s">
+          <span class="service-icon">◫</span>
+          <div class="service-name">UI/UX Design</div>
+          <p class="service-desc">Interfaces that are as intelligent as they are beautiful — grounded in user behavior and refined by iteration.</p>
+        </div>
+        <div class="service-card reveal" style="transition-delay:0.26s">
+          <span class="service-icon">◧</span>
+          <div class="service-name">Tech Consulting</div>
+          <p class="service-desc">Strategic guidance to modernize infrastructure, audit systems, and architect solutions built for tomorrow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="container">
+      <div class="work-header reveal">
+        <div>
+          <div class="section-label">Portfolio</div>
+          <h2 class="section-title">Selected Work</h2>
+        </div>
+        <!-- <a href="#" class="work-all">All Projects →</a> -->
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal" style="transition-delay:0.05s">
+          <div class="project-bg project-bg-1"></div>
+          <div class="project-overlay"><a class="project-view-btn" href="https://www.kaiferdata.com" target="_blank" rel="noopener">View Project</a></div>
+          <div class="project-content">
+            <div class="project-tag">Web App</div>
+            <div class="project-name">Kaifer Data</div>
+            <p class="project-description">A personal project that has eventually scaled, KaiferData is a robust data vending system created specifically for Ghanaians. With the aim of making mobile data affordable to customers it has grown to satisfy over 50,000 customers.</p>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <div class="project-bg project-bg-2"></div>
+          <div class="project-overlay"><button class="project-view-btn">View Project</button></div>
+          <div class="project-content">
+            <div class="project-tag">Mobile App</div>
+            <div class="project-name">IdeoGy</div>
+            <p class="project-description">A mobile app that helps with keeping ideas and constantly sending reminders to users. With an integrated AI, users are able to get assistance on how to execute their raw ideas.</p>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.15s">
+          <div class="project-bg project-bg-3"></div>
+          <div class="project-overlay"><button class="project-view-btn">View Project</button></div>
+          <div class="project-content">
+            <div class="project-tag">UI/UX Design</div>
+            <div class="project-name">Vaulted</div>
+            <p class="project-description">A personal project.</p>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <div class="project-bg project-bg-4"></div>
+          <div class="project-overlay"><a class="project-view-btn" href="https://www.safeslips.com" target="_blank" rel="noopener">View Project</a></div>
+          <div class="project-content">
+            <div class="project-tag">Website</div>
+            <div class="project-name">Safe Slips</div>
+            <p class="project-description">A modern sports predcition website tailored for a client.</p>
+          </div>
+        </div>
+        <!-- <div class="project-card reveal" style="transition-delay:0.25s">
+          <div class="project-bg project-bg-5"></div>
+          <div class="project-overlay"><button class="project-view-btn">View Project</button></div>
+          <div class="project-content">
+            <div class="project-tag">FinTech / Web</div>
+            <div class="project-name">Celadon</div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.3s">
+          <div class="project-bg project-bg-6"></div>
+          <div class="project-overlay"><button class="project-view-btn">View Project</button></div>
+          <div class="project-content">
+            <div class="project-tag">Platform / API</div>
+            <div class="project-name">Sentry Grid</div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Let's build<br><span class="accent">something great.</span></h2>
+        <p class="contact-sub">Have a project in mind? We'd love to help you bring it to life. Drop us a message and we'll get back within 24 hours.</p>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn" id="submitBtn">Send Message</button>
+          <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+
+        <div class="social-links">
+          <!-- GitHub -->
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <!-- Twitter/X -->
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 <span>Kaifer Tech</span>. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
