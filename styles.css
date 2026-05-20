@@ -68,9 +68,17 @@ nav.scrolled {
   border-color: var(--border);
 }
 .nav-logo {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-head);
-  font-size: 1.7rem;
+  font-size: 1.75rem;
   letter-spacing: 0.05em;
+}
+.nav-logo img {
+  display: block;
+  width: 180px;
+  max-width: 180px;
+  height: auto;
 }
 .nav-logo span { color: var(--accent); }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; }
