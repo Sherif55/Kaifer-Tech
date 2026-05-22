@@ -119,6 +119,15 @@ function animCursor() {
 }
 animCursor();
 
+document.querySelectorAll('.project-card').forEach(card => {
+  card.addEventListener('click', e => {
+    const projectLink = card.querySelector('.project-overlay a');
+    if (!projectLink) return;
+    if (e.target.closest('a')) return;
+    window.open(projectLink.href, '_blank', 'noopener');
+  });
+});
+
 document.querySelectorAll('a, button, .project-card, .service-card').forEach(el => {
   el.addEventListener('mouseenter', () => {
     dot.style.width = dot.style.height = '12px';
